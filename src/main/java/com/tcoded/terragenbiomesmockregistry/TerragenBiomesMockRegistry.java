@@ -13,6 +13,7 @@ import org.terraform.main.TLogger;
 import org.terraform.main.TerraformGeneratorPlugin;
 import org.terraform.v1_19_R3.CustomBiomeHandler;
 
+import java.io.File;
 import java.lang.reflect.Field;
 import java.util.Optional;
 
@@ -24,6 +25,13 @@ public final class TerragenBiomesMockRegistry extends JavaPlugin {
     }
 
     private void doMagic2() {
+        File pluginsFolder = getDataFolder().getParentFile();
+        File terraFolder = new File(pluginsFolder, "TerraformGenerator");
+
+        if (!terraFolder.exists()) {
+            terraFolder.mkdirs();
+        }
+
         TerraformGeneratorPlugin.logger = new TLogger();
         CustomBiomeHandler.init();
     }
