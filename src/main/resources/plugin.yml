@@ -1,0 +1,5 @@
+name: TerragenBiomesMockRegistry
+version: '${version}'
+main: com.tcoded.terragenbiomesmockregistry.TerragenBiomesMockRegistry
+api-version: 1.19
+folia-supported: true
