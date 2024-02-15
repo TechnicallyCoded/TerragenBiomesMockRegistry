@@ -3,7 +3,7 @@ package com.tcoded.terragenbiomesmockregistry;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.terraform.main.TLogger;
 import org.terraform.main.TerraformGeneratorPlugin;
-import org.terraform.v1_20_R2.CustomBiomeHandler;
+import org.terraform.v1_20_R3.CustomBiomeHandler;
 
 import java.io.File;
 
